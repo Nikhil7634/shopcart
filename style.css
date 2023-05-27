@@ -34,9 +34,14 @@ html::-webkit-scrollbar-thumb{
 }
 .navbar a img{
   height: 40px;
+  display: block;
 }
-.navbar img{
+.menubtn{
   height: 10px;
+  position: absolute;
+  right: 30px;
+  height: 30px;
+  display: none;
 }
 
 
@@ -293,13 +298,53 @@ transform: scale(1.2);
   .navbar a img{
     height: 35px;
   }
-  #mob-nav{
-    display: none;
+  .menubtn{
+    display: inline-block;
+  }
+  .mob-nav{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    top: 55px;
+    background: whitesmoke;
+    right: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .search-bar{
+    width: 95%;
+    position: relative !important;
+    left: 10px;
+  }
+  .search-bar input:focus{
+    outline: none;
+  }
+  .mob-nav nav{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .mob-nav nav a{
+    width: 100%;
+    display: block;
+    padding: 8px 15px;
+    border-bottom: 0.5px solid gray;
   }
   
   .main-container{
     width: 100%;
-    background: whitesmoke;
+    background: #E7E7E740;
+  }
+  .main-container img{
+    object-fit: cover;
   }
   .main-container div{
     width: 100%;
