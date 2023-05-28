@@ -44,6 +44,9 @@ html::-webkit-scrollbar-thumb{
   display: none;
 }
 
+.mob-nav{
+  display: flex;
+}
 
 
 
@@ -288,6 +291,28 @@ transform: scale(1.2);
 }
 
 
+.footer-content div h2{
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+.footer-content div nav{
+  margin-top: 20px;
+}
+.footer-content div nav li a{
+  transition: 0.1s;
+  
+}
+ 
+.footer-content div nav li:hover a{
+  padding-left: 10px;
+  color: #ff3040;
+}
+.footer-content div nav li a{
+  font-size: 1rem;
+  cursor: pointer;
+}
 
 
 
@@ -312,15 +337,20 @@ transform: scale(1.2);
     padding-bottom: 40px;
     border-radius: 0px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.4s;
     height: 100vh;
+    width: 0%;
+    padding-left: 0px;
+  }
+  .openNav{
     width: 100%;
+    padding-left: 10px;
   }
   
   .search-bar{
     width: 95%;
-    position: relative !important;
-    left: 10px;
+    position: relative;
+    left: 5px;
   }
   .search-bar input:focus{
     outline: none;
@@ -334,7 +364,6 @@ transform: scale(1.2);
   }
   .mob-nav nav a{
     width: 100%;
-    display: block;
     padding: 8px 15px;
     border-bottom: 0.5px solid gray;
   }
